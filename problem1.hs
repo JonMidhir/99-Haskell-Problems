@@ -1,0 +1,1 @@
+myLast arr = last arr

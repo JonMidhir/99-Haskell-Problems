@@ -2,4 +2,4 @@
 --   > isPrime 7
 --   True
 isPrime :: Int -> Bool
-isPrime n = all (\x -> n `mod` x /= 0) [2..ceiling . sqrt $ fromIntegral n]
+isPrime n = all (\x -> n `mod` x /= 0) [2..floor . sqrt $ fromIntegral n]

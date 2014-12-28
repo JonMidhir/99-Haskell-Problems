@@ -10,5 +10,5 @@ unpack (Multiple n a) = foldl (\acc x -> a:acc) [] [1..n]
 unpack (Single a) = [a]
 
 decodeModified :: [ListItem a] -> [a]
-decodeModified (x:[]) = unpack x
+decodeModified [] = []
 decodeModified (x:xs) = unpack x ++ decodeModified xs
